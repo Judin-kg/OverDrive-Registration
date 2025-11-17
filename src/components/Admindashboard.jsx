@@ -5,12 +5,12 @@ const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
+  
   // Fetch All Users
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/register");
+      const res = await fetch("https://overdrive-server.onrender.com/api/register");
 
       if (!res.ok) {
         throw new Error("Failed to fetch users");

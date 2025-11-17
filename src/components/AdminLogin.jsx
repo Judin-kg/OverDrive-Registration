@@ -154,11 +154,11 @@ const AdminLogin = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/admin/login", formData);
+      const res = await axios.post("https://overdrive-server.onrender.com/api/admin/login", formData);
 
       localStorage.setItem("adminToken", res.data.token);
 
-      alert("Login Successful");
+      alert("Registration Successfully completed");
       navigate("/admindashboard");
 
     } catch (err) {
