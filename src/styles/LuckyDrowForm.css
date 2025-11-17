@@ -1,0 +1,154 @@
+/* --- Page Layout --- */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* --- Form Card --- */
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* --- Form Title --- */
+.register-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* --- Input Fields --- */
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1.6px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-input:focus {
+  border-color: #722121;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Error Message --- */
+.error-text {
+  font-size: 13px;
+  margin-top: 4px;
+  color: red;
+}
+
+/* --- Submit Button --- */
+.submit-btn {
+  width: 100%;
+  background: #632020;
+  color: #fff;
+  padding: 12px;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #6f1d1d;
+  transform: translateY(-2px);
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Full background image */
+.lucky-bg {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transparent form box */
+.lucky-form-box {
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.lucky-form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+.lucky-form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+.lucky-form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2a2727;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Error text */
+.error {
+  color: #ffb3b3;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
