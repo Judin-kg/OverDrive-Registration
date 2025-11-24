@@ -22,7 +22,7 @@ const Navbar = () => {
           alt="Logo" 
           className="navbar-logo"
         />
-        <span className="text-light">Over Drive</span>
+        <span className="text-light">New Over Drive</span>
       </Link>
 
       {/* Toggle Button (mobile) */}
